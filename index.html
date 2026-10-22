@@ -1,0 +1,96 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penalty Shootout ⚽</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>⚽ PENALTY SHOOTOUT</h1>
+        <p>Become the champion. Beat the goalkeeper!</p>
+    </header>
+
+    <main class="game-container">
+
+        <section class="scoreboard">
+            <div class="score-box">
+                <span>GOALS</span>
+                <h2 id="goals">0</h2>
+            </div>
+
+            <div class="score-box">
+                <span>SAVES</span>
+                <h2 id="saves">0</h2>
+            </div>
+
+            <div class="score-box">
+                <span>SHOTS LEFT</span>
+                <h2 id="shotsLeft">5</h2>
+            </div>
+        </section>
+
+        <div class="message" id="message">
+            Choose your direction and take the shot!
+        </div>
+
+        <section class="field">
+            <div class="stadium-lights">🏟️ 🏟️ 🏟️ 🏟️ 🏟️</div>
+
+            <div class="goal">
+                <div class="goal-net"></div>
+                <div class="goalkeeper" id="goalkeeper">🧤</div>
+            </div>
+
+            <div class="goal-line"></div>
+
+            <div class="penalty-spot"></div>
+
+            <div class="football" id="football">⚽</div>
+
+            <div class="field-label">PENALTY AREA</div>
+        </section>
+
+        <section class="controls">
+            <h3>Where do you want to shoot?</h3>
+
+            <div class="buttons">
+                <button class="shoot-btn" data-direction="left">
+                    ↖ LEFT
+                </button>
+
+                <button class="shoot-btn" data-direction="center">
+                    ↑ CENTER
+                </button>
+
+                <button class="shoot-btn" data-direction="right">
+                    ↗ RIGHT
+                </button>
+            </div>
+
+            <button id="restartBtn" class="restart-btn">
+                🔄 Restart Game
+            </button>
+        </section>
+
+        <section class="instructions">
+            <h3>📋 How to Play</h3>
+            <p>1. Select Left, Center, or Right.</p>
+            <p>2. The goalkeeper will try to save your shot.</p>
+            <p>3. Score as many goals as possible in 5 shots!</p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Made with ❤️ for football fans</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+```
